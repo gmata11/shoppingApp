@@ -12,7 +12,8 @@ struct ContentView: View {
     var body: some View {
         VStack(spacing: 15) {
             ZStack {
-                Text("YO POR TI").font(.body)
+                Image("yoPorTiLogoPng").resizable()
+                .frame(width: 60, height: 25)
                 HStack(spacing: 18) {
                     Button(action: {
                         //Todo
@@ -82,31 +83,32 @@ struct MainView: View {
                 }
             }
             DetailsScroll()
-        }
-        .background(Color("Color"))
-        .padding()
+        }.padding()
+        .background(Color(.white))
     }
 }
 
 struct DetailsScroll: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            ForEach(datas) {i in
-                HStack {
-                    ForEach(i.rows) {j in
-                        VStack(spacing: 8) {
-                            Image(j.image).resizable().frame(width: UIScreen.main.bounds.width / 2 - 25, height: 240)
-                            HStack {
-                                VStack(alignment: .leading, spacing: 10) {
-                                    Text(j.name)
-                                    Text(j.price).fontWeight(.heavy)
-                                }
-                                Spacer()
-                                Button(action: {
-                                    //Todo
-                                }) {
-                                    Image("menu").resizable()
-                                    .frame(width: 20, height: 20)
+            VStack(spacing: 12) {
+                ForEach(datas) {i in
+                    HStack {
+                        ForEach(i.rows) {j in
+                            VStack(spacing: 8) {
+                                Image(j.image).resizable().frame(width: UIScreen.main.bounds.width / 2 - 25, height: 160)
+                                HStack {
+                                    VStack(alignment: .leading, spacing: 10) {
+                                        Text(j.name)
+                                        Text(j.price).fontWeight(.heavy)
+                                    }
+                                    Spacer()
+                                    Button(action: {
+                                        //Todo
+                                    }) {
+                                        Image("option").resizable()
+                                        .frame(width: 20, height: 20)
+                                    }.padding(.trailing, 15)
                                 }
                             }
                         }
@@ -129,12 +131,10 @@ struct row: Identifiable {
     var image: String
 }
 
-var sizes = ["S","M","X","XL"]
-
-var types = ["Dress","Pants","Blazers","Jackets"]
-
 var datas = [
-    type(id: 0,rows: [row(id:0, name: "Super Papa", price: "40€", image: "superPapa"),row(id:1,name: "Super Opositores", price: "30€", image: "superOpositores")]),
+    type(id: 0,rows: [row(id:0, name: "Super Papa", price: "40€", image: "superPapa"),row(id:1,name: "Super Oposit", price: "30€", image: "superOpositores")]),
 
     type(id: 2,rows: [row(id:0, name: "Samara", price: "30€", image: "samara"),row(id:1,name: "Laos", price: "25€", image: "laos")]),
+    
+    type(id: 3,rows: [row(id:0, name: "Samara", price: "30€", image: "samara"),row(id:1,name: "Laos", price: "25€", image: "laos")]),
 ]
