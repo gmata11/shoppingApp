@@ -29,14 +29,6 @@ struct ContentView: View {
                     }) {
                         Image("search").resizable()
                         .frame(width: 20, height: 20)
-//                            .foregroundColor(.black)
-                    }
-
-                    Button(action: {
-                        //Todo
-                    }) {
-                        Image("noti").resizable()
-                        .frame(width: 20, height: 20)
                     }
 
                     Button(action: {
