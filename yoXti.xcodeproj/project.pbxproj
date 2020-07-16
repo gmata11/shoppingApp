@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EE4F98E24BF18580085F5F9 /* yoXti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yoXti.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EE4F98E24BF18580085F5F9 /* YO POR TI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YO POR TI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE4F99124BF18580085F5F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EE4F99324BF18580085F5F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0EE4F99524BF18580085F5F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		0EE4F98F24BF18580085F5F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0EE4F98E24BF18580085F5F9 /* yoXti.app */,
+				0EE4F98E24BF18580085F5F9 /* YO POR TI.app */,
 				0EE4F9A424BF185A0085F5F9 /* yoXtiTests.xctest */,
 				0EE4F9AF24BF185A0085F5F9 /* yoXtiUITests.xctest */,
 			);
@@ -139,9 +139,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0EE4F98D24BF18580085F5F9 /* yoXti */ = {
+		0EE4F98D24BF18580085F5F9 /* Yo Por Ti */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0EE4F9B824BF185A0085F5F9 /* Build configuration list for PBXNativeTarget "yoXti" */;
+			buildConfigurationList = 0EE4F9B824BF185A0085F5F9 /* Build configuration list for PBXNativeTarget "Yo Por Ti" */;
 			buildPhases = (
 				0EE4F98A24BF18580085F5F9 /* Sources */,
 				0EE4F98B24BF18580085F5F9 /* Frameworks */,
@@ -151,9 +151,9 @@
 			);
 			dependencies = (
 			);
-			name = yoXti;
+			name = "Yo Por Ti";
 			productName = yoXti;
-			productReference = 0EE4F98E24BF18580085F5F9 /* yoXti.app */;
+			productReference = 0EE4F98E24BF18580085F5F9 /* YO POR TI.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0EE4F9A324BF185A0085F5F9 /* yoXtiTests */ = {
@@ -228,7 +228,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0EE4F98D24BF18580085F5F9 /* yoXti */,
+				0EE4F98D24BF18580085F5F9 /* Yo Por Ti */,
 				0EE4F9A324BF185A0085F5F9 /* yoXtiTests */,
 				0EE4F9AE24BF185A0085F5F9 /* yoXtiUITests */,
 			);
@@ -294,12 +294,12 @@
 /* Begin PBXTargetDependency section */
 		0EE4F9A624BF185A0085F5F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0EE4F98D24BF18580085F5F9 /* yoXti */;
+			target = 0EE4F98D24BF18580085F5F9 /* Yo Por Ti */;
 			targetProxy = 0EE4F9A524BF185A0085F5F9 /* PBXContainerItemProxy */;
 		};
 		0EE4F9B124BF185A0085F5F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0EE4F98D24BF18580085F5F9 /* yoXti */;
+			target = 0EE4F98D24BF18580085F5F9 /* Yo Por Ti */;
 			targetProxy = 0EE4F9B024BF185A0085F5F9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -444,7 +444,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gmata.yoXti;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "YO POR TI";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,7 +464,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gmata.yoXti;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "YO POR TI";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -566,7 +566,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0EE4F9B824BF185A0085F5F9 /* Build configuration list for PBXNativeTarget "yoXti" */ = {
+		0EE4F9B824BF185A0085F5F9 /* Build configuration list for PBXNativeTarget "Yo Por Ti" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0EE4F9B924BF185A0085F5F9 /* Debug */,
