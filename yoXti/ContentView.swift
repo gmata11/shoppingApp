@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
         VStack(spacing: 15) {
             ZStack {
@@ -22,7 +23,7 @@ struct ContentView: View {
                         .frame(width: 20, height: 20)
                     }
                     Spacer()
-                    
+
                     Button(action: {
                         //Todo
                     }) {
@@ -30,14 +31,14 @@ struct ContentView: View {
                         .frame(width: 20, height: 20)
 //                            .foregroundColor(.black)
                     }
-                    
+
                     Button(action: {
                         //Todo
                     }) {
                         Image("noti").resizable()
                         .frame(width: 20, height: 20)
                     }
-                    
+
                     Button(action: {
                         //Todo
                     }) {
@@ -46,7 +47,7 @@ struct ContentView: View {
                     }
                 }
             }.background(Color.white).padding([.leading,.trailing,.top], 15)
-            
+
             MainView()
         }
     }
@@ -79,6 +80,7 @@ struct MainView: View {
                     }) {
                         Image("filter").resizable()
                         .frame(width: 20, height: 20)
+                        .foregroundColor(.black)
                     }.background(Color.white)
                 }
             }
@@ -108,11 +110,37 @@ struct DetailsScroll: View {
                                     }) {
                                         Image("option").resizable()
                                         .frame(width: 20, height: 20)
+                                        .foregroundColor(.black)
                                     }.padding(.trailing, 15)
                                 }
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+struct Splash: View {
+    
+    @State var isActive = false
+    
+    var body: some View {
+        ZStack {
+            if self.isActive {
+                ContentView()
+            }else {
+                Color.white.edgesIgnoringSafeArea(.all)
+                ZStack {
+                    Image("yoPorTiLogoPng").rotation3DEffect(.degrees(360), axis: (x: 1, y: 0, z: 0))
+                }
+            }
+            
+        }.onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                withAnimation {
+                    self.isActive = true
                 }
             }
         }
