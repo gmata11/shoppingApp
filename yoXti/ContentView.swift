@@ -24,24 +24,46 @@ struct ContentView_Previews: PreviewProvider {
 struct Home: View {
     var body: some View {
         NavigationView {
-            VStack(spacing: 0) {
-                Image("yoPorTiLogoPng").resizable()
-                .frame(width: 60, height: 30)
-                Spacer()
+            VStack(spacing: 15) {
+                ZStack {
+                    Image("yoPorTiLogoPng").resizable()
+                    .frame(width: 60, height: 25)
+                    HStack(spacing: 18) {
+                        Button(action: {
+                            //Todo
+                        }) {
+                            Image("menu").resizable()
+                            .frame(width: 20, height: 20)
+                        }
+                        Spacer()
+
+                        Button(action: {
+                            //Todo
+                        }) {
+                            Image("search").resizable()
+                            .frame(width: 20, height: 20)
+                        }
+
+                        Button(action: {
+                            //Todo
+                        }) {
+                            Image("shop").resizable()
+                            .frame(width: 20, height: 20)
+                        }
+                    }
+                }.background(Color.white).padding([.leading,.trailing,.top], 15)
+
                 MainView()
-                
             }.navigationBarBackButtonHidden(true)
             .navigationBarHidden(true)
             .navigationBarTitle("")
-            .edgesIgnoringSafeArea(.bottom)
-            
         }
     }
 }
 
 struct MainView: View {
     var body: some View {
-        VStack(spacing: 0) {
+        VStack(spacing: 15) {
             HStack {
                 HStack {
                     Button(action: {
@@ -65,9 +87,8 @@ struct MainView: View {
                 }
             }
             DetailsScroll()
-            NewBar()
         }.padding()
-        .background(Color(.green))
+        .background(Color(.white))
     }
 }
 
@@ -75,7 +96,7 @@ struct DetailsScroll: View {
     @State var show = false
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            VStack(spacing: 20) {
+            VStack(spacing: 12) {
                 ForEach(datas) {i in
                     HStack {
                         ForEach(i.rows) {j in
@@ -83,99 +104,8 @@ struct DetailsScroll: View {
                         }
                     }
                 }
-                
             }
         }
-    }
-}
-
-struct NewBar: View {
-    @State var index = 0
-    var body: some View {
-        ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom), content: {
-            HStack {
-                GeometryReader {g in
-                    VStack {
-                        Button(action: {
-                            withAnimation(.spring()) {
-                                self.index = 0
-                            }
-                        }) {
-                            Image("menu")
-                                .renderingMode(.template)
-                                .resizable()
-                                .foregroundColor(self.index == 0 ? .black : .gray)
-                                .frame(width: 20, height: 20)
-                                .padding(.all, 15)
-                                .foregroundColor(.white)
-                        }
-                    }.frame(width: 43, height: 43)
-                }.frame(width: 43, height: 43)
-                
-                Spacer(minLength: 0)
-                
-                GeometryReader {g in
-                    VStack {
-                        Button(action: {
-                            withAnimation(.spring()) {
-                                self.index = 1
-                            }
-                        }) {
-                            Image("filter")
-                                .renderingMode(.template)
-                                .resizable()
-                                .foregroundColor(self.index == 1 ? .black : .gray)
-                                .frame(width: 20, height: 20)
-                                .padding(.all, 15)
-                                .foregroundColor(.white)
-                        }
-                    }.frame(width: 43, height: 43)
-                }.frame(width: 43, height: 43)
-                
-                Spacer(minLength: 0)
-                
-                GeometryReader {g in
-                    VStack {
-                        Button(action: {
-                            withAnimation(.spring()) {
-                                self.index = 2
-                            }
-                        }) {
-                            Image("search")
-                                .renderingMode(.template)
-                                .resizable()
-                                .foregroundColor(self.index == 2 ? .black : .gray)
-                                .frame(width: 20, height: 20)
-                                .padding(.all, 15)
-                                .foregroundColor(.white)
-                        }
-                    }.frame(width: 43, height: 43)
-                }.frame(width: 43, height: 43)
-                
-                Spacer(minLength: 0)
-                
-                GeometryReader {g in
-                    VStack {
-                        Button(action: {
-                            withAnimation(.spring()) {
-                                self.index = 3
-                            }
-                        }) {
-                            Image("shop")
-                                .renderingMode(.template)
-                                .resizable()
-                                .foregroundColor(self.index == 3 ? .black : .gray)
-                                .frame(width: 20, height: 20)
-                                .padding(.all, 15)
-                                .foregroundColor(.white)
-                        }
-                    }.frame(width: 43, height: 43)
-                }.frame(width: 43, height: 43)
-            }.padding(.horizontal, 25)
-            .padding(.bottom, 10)
-            .padding(.top, 8)
-            .background(Color("BarColor"))
-        }).edgesIgnoringSafeArea(.bottom)
     }
 }
 
