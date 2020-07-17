@@ -67,7 +67,7 @@ struct MainView: View {
             DetailsScroll()
             NewBar()
         }.padding()
-        .background(Color(.green))
+        .background(Color(.white))
     }
 }
 
@@ -174,7 +174,7 @@ struct NewBar: View {
             }.padding(.horizontal, 25)
             .padding(.bottom, 10)
             .padding(.top, 8)
-            .background(Color("BarColor"))
+                .background(Color(.white))
         }).edgesIgnoringSafeArea(.bottom)
     }
 }
