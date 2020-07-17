@@ -488,7 +488,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YO POR TI.app/YO POR TI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yoXti.app/yoXti";
 			};
 			name = Debug;
 		};
@@ -510,7 +510,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YO POR TI.app/YO POR TI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yoXti.app/yoXti";
 			};
 			name = Release;
 		};
@@ -528,10 +528,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gmata.yoXtiUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Yo Por Ti";
+				TEST_TARGET_NAME = yoXti;
 			};
 			name = Debug;
 		};
@@ -549,10 +548,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gmata.yoXtiUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Yo Por Ti";
+				TEST_TARGET_NAME = yoXti;
 			};
 			name = Release;
 		};
