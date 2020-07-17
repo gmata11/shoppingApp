@@ -11,6 +11,18 @@ import SwiftUI
 struct ContentView: View {
 
     var body: some View {
+        Home()
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
+struct Home: View {
+    var body: some View {
         NavigationView {
             VStack(spacing: 15) {
                 ZStack {
@@ -46,12 +58,6 @@ struct ContentView: View {
             .navigationBarHidden(true)
             .navigationBarTitle("")
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
 
@@ -106,37 +112,47 @@ struct DetailsScroll: View {
 struct DetailView: View {
     @Binding var show: Bool
     var body: some View {
-        VStack {
-            ZStack {
-            Image("yoPorTiLogoPng").resizable()
-            .frame(width: 60, height: 25)
-            HStack(spacing: 18) {
-                Button(action: {
-                    self.show.toggle()
-                }) {
-                    Image("back").resizable()
-                    .frame(width: 10, height: 10)
+        NavigationView {
+            VStack {
+                ZStack {
+                Image("yoPorTiLogoPng").resizable()
+                .frame(width: 60, height: 25)
+                    HStack(spacing: 18) {
+                        Button(action: {
+                            self.show.toggle()
+                        }) {
+                            Image("back").resizable()
+                                .frame(width: 10, height: 10)
+                        }
+                        Spacer()
+                        
+                        Button(action: {
+                            //Todo
+                        }) {
+                            Image("search").resizable()
+                                .frame(width: 20, height: 20)
+                        }
+                        
+                        Button(action: {
+                            //Todo
+                        }) {
+                            Image("shop").resizable()
+                                .frame(width: 20, height: 20)
+                        }
+                    }
                 }
-                Spacer()
-
-                Button(action: {
-                    //Todo
-                }) {
-                    Image("search").resizable()
-                    .frame(width: 20, height: 20)
+                Image("samara").renderingMode(.original).resizable().frame(width: UIScreen.main.bounds.width / 2 - 25, height: 160)
+                VStack(spacing: 15) {
+                    HStack {
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text("Caja1").font(.largeTitle)
+                            Text("30€").fontWeight(.heavy)
+                        }
+                    }
                 }
-
-                Button(action: {
-                    //Todo
-                }) {
-                    Image("shop").resizable()
-                    .frame(width: 20, height: 20)
-                }
-            }.navigationBarHidden(true).navigationBarBackButtonHidden(true).navigationBarTitle("")
             }
+        }.padding().navigationBarHidden(true).navigationBarBackButtonHidden(true).navigationBarTitle("")
 
-            Spacer()
-        }.padding()
     }
 }
 
