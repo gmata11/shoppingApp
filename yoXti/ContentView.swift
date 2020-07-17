@@ -25,12 +25,9 @@ struct Home: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                ZStack {
-                    Image("yoPorTiLogoPng").resizable()
-                    .frame(width: 60, height: 30)
-                }.background(Color.white).padding([.leading,.trailing,.top], 0)
-                .frame(minWidth: 0, maxWidth: 60, minHeight: 0, maxHeight: 30)
-
+                Image("yoPorTiLogoPng").resizable()
+                .frame(width: 60, height: 30)
+                Spacer()
                 MainView()
                 
             }.navigationBarBackButtonHidden(true)
@@ -70,7 +67,7 @@ struct MainView: View {
             DetailsScroll()
             NewBar()
         }.padding()
-        .background(Color(.white))
+        .background(Color(.green))
     }
 }
 
