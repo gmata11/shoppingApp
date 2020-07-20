@@ -91,15 +91,29 @@
 		0EB0819A24C5D72700A54885 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0EB0818C24C5AA2200A54885 /* DetailView.swift */,
-				0EB0819024C5D2A300A54885 /* NewBarView.swift */,
+				0EE4F99524BF18580085F5F9 /* ContentView.swift */,
 				0EB0819224C5D2E300A54885 /* MainView.swift */,
 				0EB0819424C5D3C800A54885 /* DetailsScrollView.swift */,
 				0EB0819624C5D4E900A54885 /* CardsView.swift */,
-				0EB0819824C5D54500A54885 /* SpashScreenView.swift */,
-				0EE4F99524BF18580085F5F9 /* ContentView.swift */,
+				0EB0819024C5D2A300A54885 /* NewBarView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0EB0819B24C5DA8000A54885 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				0EB0819824C5D54500A54885 /* SpashScreenView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		0EB0819C24C5DA9600A54885 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				0EB0818C24C5AA2200A54885 /* DetailView.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		0EE4F98524BF18580085F5F9 = {
@@ -125,7 +139,9 @@
 		0EE4F99024BF18580085F5F9 /* yoXti */ = {
 			isa = PBXGroup;
 			children = (
+				0EB0819B24C5DA8000A54885 /* Splash */,
 				0EB0819A24C5D72700A54885 /* Views */,
+				0EB0819C24C5DA9600A54885 /* Details */,
 				0EE4F99124BF18580085F5F9 /* AppDelegate.swift */,
 				0EE4F99324BF18580085F5F9 /* SceneDelegate.swift */,
 				0EE4F99724BF185A0085F5F9 /* Assets.xcassets */,
