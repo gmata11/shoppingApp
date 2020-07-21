@@ -9,9 +9,14 @@
 import SwiftUI
 
 struct NewBarView: View {
+    
+//    init() {
+//        UITabBar.appearance().tintColor =  UIColor.red
+//    }
+    
     @State var index = 0
     var body: some View {
-        TabView {
+        TabView(selection: $index) {
             ContentView()
                 .tabItem({
                     Image("menu")
@@ -20,6 +25,14 @@ struct NewBarView: View {
                 .tabItem({
                     Image("search")
                 }).tag(1)
+            ShopMainView()
+                .tabItem({
+                    Image("shop")
+                }).tag(2)
+            InfoMainView()
+                .tabItem({
+                    Image("info")
+                }).tag(3)
         }
     }
 }
