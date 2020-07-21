@@ -30,10 +30,10 @@ struct InfoMainView: View {
             .animation(.easeInOut(duration: 2))
             
             VStack(spacing: 15) {
-                Info(showDetail: $showDetails1, name: "¿En que ciudades se reparten los packs? ¿Y Los complementos?", text: "En Yo Por Ti nos gusta dar un excelente servicio, es por ello que de momento los packs solo se pueden solicitar para Lleida y alrededores. Estamos trabajando para encontrar un proveedor de confianza en distintas ciudades para poder llegar a todos. Envíanos un email donde te gustaría que llegasen los packs.Los complementos los enviamos a toda la España.")
-                Info(showDetail: $showDetails2, name: "¿Cuál es el horario de reparto?", text: "De lunes a domingo de 8:00h a 21:00h.")
-                Info(showDetail: $showDetails3, name: "¿Cómo hacer compras seguras en la tienda online? ¿Mis datos están protegidos?", text: "¡Muy fácil! Seleccionas el pack que más te guste y le puedes añadir un complemento para terminar de perfeccionarlo, además de solicitar si quieres foto personalizada.\nUna vez en el proceso de compra, indicas la fecha y hora de entrega y solo queda esperar a que llegue el día para sorprender a esa persona que tanto se lo merece.\nTodos los datos están protegidos , Yo Por Ti los almacena de forma segura y solo pueden ser usados para fines relacionados a Yo Por Ti.")
-                Info(showDetail: $showDetails4, name: "¿Con cuántos días de antelación se tiene que hacer el pedido?", text: "Para los packs sin productos personalizados con 24 horas de antelación.\nPara el envío de  complementos personalizados con una antelación de tres días laborables.")
+                Info(showDetail: $showDetails1, name: Constants.faq1Name, text: Constants.faq1Text)
+                Info(showDetail: $showDetails2, name: Constants.faq2Name, text: Constants.faq2Text)
+                Info(showDetail: $showDetails3, name: Constants.faq3Name, text: Constants.faq3Text)
+                Info(showDetail: $showDetails4, name: Constants.faq4Name, text: Constants.faq4Text)
             }
             .font(.body)
             .foregroundColor(.gray)

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0EA08F0624C6DB680095C75E /* ShopMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA08F0524C6DB680095C75E /* ShopMainView.swift */; };
 		0EA08F0924C6DD950095C75E /* InfoMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA08F0824C6DD950095C75E /* InfoMainView.swift */; };
+		0EA08F0B24C724DB0095C75E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA08F0A24C724DB0095C75E /* Constants.swift */; };
 		0EB0818D24C5AA2200A54885 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0818C24C5AA2200A54885 /* DetailView.swift */; };
 		0EB0819124C5D2A300A54885 /* NewBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0819024C5D2A300A54885 /* NewBarView.swift */; };
 		0EB0819324C5D2E300A54885 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0819224C5D2E300A54885 /* MainView.swift */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		0EA08F0524C6DB680095C75E /* ShopMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopMainView.swift; sourceTree = "<group>"; };
 		0EA08F0824C6DD950095C75E /* InfoMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainView.swift; sourceTree = "<group>"; };
+		0EA08F0A24C724DB0095C75E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0EB0818C24C5AA2200A54885 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		0EB0819024C5D2A300A54885 /* NewBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBarView.swift; sourceTree = "<group>"; };
 		0EB0819224C5D2E300A54885 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				0EE4F99C24BF185A0085F5F9 /* LaunchScreen.storyboard */,
 				0EE4F99F24BF185A0085F5F9 /* Info.plist */,
 				0EE4F99924BF185A0085F5F9 /* Preview Content */,
+				0EA08F0A24C724DB0095C75E /* Constants.swift */,
 			);
 			path = yoXti;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				0EB0819324C5D2E300A54885 /* MainView.swift in Sources */,
 				0EA08F0624C6DB680095C75E /* ShopMainView.swift in Sources */,
 				0EE4F99224BF18580085F5F9 /* AppDelegate.swift in Sources */,
+				0EA08F0B24C724DB0095C75E /* Constants.swift in Sources */,
 				0EB0818D24C5AA2200A54885 /* DetailView.swift in Sources */,
 				0EE4F99424BF18580085F5F9 /* SceneDelegate.swift in Sources */,
 				0EE4F99624BF18580085F5F9 /* ContentView.swift in Sources */,

@@ -29,7 +29,7 @@ struct SpashScreenView: View {
                     
                 }
                 ZStack {
-                    Text("Created by gmata").frame(width: 150, height: 700, alignment: .bottomLeading)
+                    Text(Constants.splashCompany).frame(width: 150, height: 700, alignment: .bottomLeading)
                 }
             }
             
