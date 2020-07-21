@@ -33,7 +33,7 @@ struct NewBarView: View {
                 .tabItem({
                     Image("info")
                 }).tag(3)
-        }
+        }.accentColor(.black)
     }
 }
 
