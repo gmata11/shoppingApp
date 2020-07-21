@@ -15,7 +15,7 @@ struct SpashScreenView: View {
     var body: some View {
         ZStack() {
             if self.isActive {
-                ContentView()
+                NewBarView()
             }else {
                 Color.white.edgesIgnoringSafeArea(.all)
                 ZStack {

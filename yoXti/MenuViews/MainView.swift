@@ -34,7 +34,6 @@ struct MainView: View {
                 }
             }
             DetailsScrollView()
-            NewBarView()
         }.padding()
         .background(Color(.white))
     }

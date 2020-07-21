@@ -21,6 +21,7 @@
 		0EE4F99E24BF185A0085F5F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EE4F99C24BF185A0085F5F9 /* LaunchScreen.storyboard */; };
 		0EE4F9A924BF185A0085F5F9 /* yoXtiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4F9A824BF185A0085F5F9 /* yoXtiTests.swift */; };
 		0EE4F9B424BF185A0085F5F9 /* yoXtiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4F9B324BF185A0085F5F9 /* yoXtiUITests.swift */; };
+		0EFC6F4224C6CBB4009D90D8 /* MainSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFC6F4124C6CBB4009D90D8 /* MainSearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		0EE4F9AF24BF185A0085F5F9 /* yoXtiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yoXtiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE4F9B324BF185A0085F5F9 /* yoXtiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yoXtiUITests.swift; sourceTree = "<group>"; };
 		0EE4F9B524BF185A0085F5F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EFC6F4124C6CBB4009D90D8 /* MainSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,16 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0EB0819A24C5D72700A54885 /* Views */ = {
+		0EB0819A24C5D72700A54885 /* MenuViews */ = {
 			isa = PBXGroup;
 			children = (
 				0EE4F99524BF18580085F5F9 /* ContentView.swift */,
 				0EB0819224C5D2E300A54885 /* MainView.swift */,
 				0EB0819424C5D3C800A54885 /* DetailsScrollView.swift */,
 				0EB0819624C5D4E900A54885 /* CardsView.swift */,
-				0EB0819024C5D2A300A54885 /* NewBarView.swift */,
 			);
-			path = Views;
+			path = MenuViews;
 			sourceTree = "<group>";
 		};
 		0EB0819B24C5DA8000A54885 /* Splash */ = {
@@ -139,8 +140,10 @@
 		0EE4F99024BF18580085F5F9 /* yoXti */ = {
 			isa = PBXGroup;
 			children = (
+				0EFC6F4324C6CBE2009D90D8 /* TabView */,
+				0EFC6F4024C6CB97009D90D8 /* SearchViews */,
 				0EB0819B24C5DA8000A54885 /* Splash */,
-				0EB0819A24C5D72700A54885 /* Views */,
+				0EB0819A24C5D72700A54885 /* MenuViews */,
 				0EB0819C24C5DA9600A54885 /* Details */,
 				0EE4F99124BF18580085F5F9 /* AppDelegate.swift */,
 				0EE4F99324BF18580085F5F9 /* SceneDelegate.swift */,
@@ -176,6 +179,22 @@
 				0EE4F9B524BF185A0085F5F9 /* Info.plist */,
 			);
 			path = yoXtiUITests;
+			sourceTree = "<group>";
+		};
+		0EFC6F4024C6CB97009D90D8 /* SearchViews */ = {
+			isa = PBXGroup;
+			children = (
+				0EFC6F4124C6CBB4009D90D8 /* MainSearchView.swift */,
+			);
+			path = SearchViews;
+			sourceTree = "<group>";
+		};
+		0EFC6F4324C6CBE2009D90D8 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				0EB0819024C5D2A300A54885 /* NewBarView.swift */,
+			);
+			path = TabView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +337,7 @@
 				0EE4F99424BF18580085F5F9 /* SceneDelegate.swift in Sources */,
 				0EE4F99624BF18580085F5F9 /* ContentView.swift in Sources */,
 				0EB0819924C5D54500A54885 /* SpashScreenView.swift in Sources */,
+				0EFC6F4224C6CBB4009D90D8 /* MainSearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
