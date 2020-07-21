@@ -11,6 +11,7 @@ import SwiftUI
 struct SpashScreenView: View {
     
     @State var isActive = false
+    @State var animation = true
     
     var body: some View {
         ZStack() {
@@ -19,7 +20,12 @@ struct SpashScreenView: View {
             }else {
                 Color.white.edgesIgnoringSafeArea(.all)
                 ZStack {
-                    Image("yoPorTiLogoPng").rotation3DEffect(.degrees(360), axis: (x: 1, y: 0, z: 0))
+                    Image("yoPorTiLogoPng")
+                    .shadow(color: Color.gray, radius: 10)
+                        .scaleEffect(animation ? 0.5 : 1.0)
+                        .rotation3DEffect(Angle(degrees: animation ? 0 : 360), axis: (x: 0, y: 360, z: 0))
+                        .animation(Animation.easeInOut(duration: 1.0))
+                        .onAppear { self.animation.toggle() }
                     
                 }
                 ZStack {
@@ -28,7 +34,7 @@ struct SpashScreenView: View {
             }
             
         }.onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
                 withAnimation {
                     self.isActive = true
                 }

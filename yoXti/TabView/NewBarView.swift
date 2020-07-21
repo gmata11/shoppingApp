@@ -10,10 +10,6 @@ import SwiftUI
 
 struct NewBarView: View {
     
-//    init() {
-//        UITabBar.appearance().tintColor =  UIColor.red
-//    }
-    
     @State var index = 0
     var body: some View {
         TabView(selection: $index) {
