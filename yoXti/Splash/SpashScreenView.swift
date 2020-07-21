@@ -34,7 +34,7 @@ struct SpashScreenView: View {
             }
             
         }.onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.4) {
                 withAnimation {
                     self.isActive = true
                 }

@@ -10,11 +10,12 @@ import SwiftUI
 
 struct InfoMainView: View {
     @State var animation = true
-    @State var showDetails1 = true
-    @State var showDetails2 = true
-    @State var showDetails3 = true
-    @State var showDetails4 = true
+    @State var showDetails1 = false
+    @State var showDetails2 = false
+    @State var showDetails3 = false
+    @State var showDetails4 = false
     @State var isShowed = false
+    
     var body: some View {
         VStack(spacing: 15) {
             Button(action: {
@@ -27,24 +28,23 @@ struct InfoMainView: View {
                     .shadow(color: .gray, radius: 10, x: 0, y: 10)
             }
             .offset(y: animation ? UIScreen.main.bounds.height / 2.5 : 0)
-            .animation(.easeInOut(duration: 2))
+            .animation(.easeInOut(duration: 2.0))
             
-            VStack(spacing: 15) {
-                Info(showDetail: $showDetails1, name: Constants.faq1Name, text: Constants.faq1Text)
-                Info(showDetail: $showDetails2, name: Constants.faq2Name, text: Constants.faq2Text)
-                Info(showDetail: $showDetails3, name: Constants.faq3Name, text: Constants.faq3Text)
-                Info(showDetail: $showDetails4, name: Constants.faq4Name, text: Constants.faq4Text)
+            VStack {
+                List {
+                    Info(showDetail: $showDetails1, name: Constants.faq1Name, text: Constants.faq1Text)
+                    Info(showDetail: $showDetails2, name: Constants.faq2Name, text: Constants.faq2Text)
+                    Info(showDetail: $showDetails3, name: Constants.faq3Name, text: Constants.faq3Text)
+                    Info(showDetail: $showDetails4, name: Constants.faq4Name, text: Constants.faq4Text)
+                }
             }
-            .font(.body)
             .foregroundColor(.gray)
-            .lineSpacing(10)
-            .lineLimit(50)
             .opacity(animation ? 0 : 1)
             .animation(Animation.easeInOut(duration: 3))
-            Spacer(minLength: 150)
+
         }
         .frame(minHeight: 0, maxHeight: .infinity)
-        .padding(.horizontal, 15)
+        .padding(.horizontal, 30)
         .onAppear { if !self.isShowed {
             self.animation.toggle()
             self.isShowed = true
