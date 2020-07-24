@@ -32,9 +32,7 @@ struct Home: View {
             }.navigationBarBackButtonHidden(true)
             .navigationBarHidden(true)
             .navigationBarTitle("")
-            .edgesIgnoringSafeArea(.bottom)
-            
-        }
+        }.hideNavigationBar()
     }
 }
 
