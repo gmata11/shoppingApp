@@ -13,24 +13,9 @@ struct MainView: View {
         VStack(spacing: 0) {
             HStack {
                 HStack {
-                    Button(action: {
-                        //Todo
-                    }) {
-                        HStack {
-                            Text("Packs")
-                            Spacer()
-                            Image("down").resizable()
-                            .frame(width: 20, height: 20)
-                        }.padding()
-                    }.foregroundColor(.black)
-                        .background(Color.white)
-                    Button(action: {
-                        //ToDo
-                    }) {
-                        Image("filter").resizable()
-                        .frame(width: 20, height: 20)
-                        .foregroundColor(.black)
-                    }.background(Color.white)
+                    HStack() {
+                        DropDownMenu()
+                    }.padding()
                 }
             }
             DetailsScrollView()

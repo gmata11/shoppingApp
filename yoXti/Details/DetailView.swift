@@ -26,25 +26,26 @@ struct logoView: View {
     @State var isShowed = false
     var body: some View {
         NavigationView {
-            VStack(spacing: 15) {
-                Button(action: {
-                    //toDo
-                }) {
-                    Image("yoPorTiLogoPng").resizable()
-                        .frame(width: 60, height: 30)
-                        .font(.largeTitle)
-                        .foregroundColor(Color.black)
-                        .shadow(color: .gray, radius: 10, x: 0, y: 10)
-                }
-                .offset(y: animation ? UIScreen.main.bounds.height / 2.5 : 0)
-                .animation(.easeInOut(duration: 2.0))
-            }.frame(minHeight: 0, maxHeight: .infinity)
-                .padding(.horizontal, 15)
-                .onAppear { if !self.isShowed {
-                    self.animation.toggle()
-                    self.isShowed = true
-                    }
-            }
+            Text("Details")
+//            VStack(spacing: 15) {
+//                Button(action: {
+//                    //toDo
+//                }) {
+//                    Image("yoPorTiLogoPng").resizable()
+//                        .frame(width: 60, height: 30)
+//                        .font(.largeTitle)
+//                        .foregroundColor(Color.black)
+//                        .shadow(color: .gray, radius: 10, x: 0, y: 10)
+//                }
+//                .offset(y: animation ? UIScreen.main.bounds.height / 2.5 : 0)
+//                .animation(.easeInOut(duration: 2.0))
+//            }.frame(minHeight: 0, maxHeight: .infinity)
+//                .padding(.horizontal, 15)
+//                .onAppear { if !self.isShowed {
+//                    self.animation.toggle()
+//                    self.isShowed = true
+//                    }
+//            }
         }
     }
 }

@@ -10,6 +10,7 @@ import SwiftUI
 
 struct  DetailsScrollView: View {
     @State var show = false
+    var packsSelected = DropDownView().$packsSelected
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 20) {
@@ -20,7 +21,6 @@ struct  DetailsScrollView: View {
                         }
                     }
                 }
-                
             }
         }
     }

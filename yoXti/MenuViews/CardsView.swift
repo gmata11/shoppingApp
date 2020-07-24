@@ -19,17 +19,10 @@ struct CardsView: View {
                 }
                 HStack {
                     VStack(alignment: .leading, spacing: 10) {
-                        Text(row.name).fontWeight(.medium)
-                        Text(row.price).fontWeight(.heavy)
+                        Text(row.name).fontWeight(.bold).font(.footnote)
+                        Text(row.price).fontWeight(.medium).font(.footnote)
                     }
                     Spacer()
-                    Button(action: {
-                        //Todo
-                    }) {
-                        Image("option").resizable()
-                        .frame(width: 20, height: 20)
-                        .foregroundColor(.black)
-                    }.padding(.trailing, 15)
                 }
             }
         }

@@ -14,6 +14,12 @@ struct InfoMainView: View {
     @State var showDetails2 = false
     @State var showDetails3 = false
     @State var showDetails4 = false
+    @State var showDetails5 = false
+    @State var showDetails6 = false
+    @State var showDetails7 = false
+    @State var showDetails8 = false
+    @State var showDetails9 = false
+    @State var showDetails10 = false
     @State var isShowed = false
     
     var body: some View {
@@ -36,6 +42,12 @@ struct InfoMainView: View {
                     Info(showDetail: $showDetails2, name: Constants.faq2Name, text: Constants.faq2Text)
                     Info(showDetail: $showDetails3, name: Constants.faq3Name, text: Constants.faq3Text)
                     Info(showDetail: $showDetails4, name: Constants.faq4Name, text: Constants.faq4Text)
+                    Info(showDetail: $showDetails5, name: Constants.faq4Name, text: Constants.faq4Text)
+                    Info(showDetail: $showDetails6, name: Constants.faq4Name, text: Constants.faq4Text)
+                    Info(showDetail: $showDetails7, name: Constants.faq4Name, text: Constants.faq4Text)
+                    Info(showDetail: $showDetails8, name: Constants.faq4Name, text: Constants.faq4Text)
+                    Info(showDetail: $showDetails9, name: Constants.faq4Name, text: Constants.faq4Text)
+                    Info(showDetail: $showDetails10, name: Constants.faq4Name, text: Constants.faq4Text)
                 }
             }
             .foregroundColor(.gray)
